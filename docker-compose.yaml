@@ -1,7 +1,7 @@
 version: '3'
 services:
   ros2_ws1:
-    image: ros-desktop:galactic
+    image: syanyong/ros-desktop:galactic
     ports:
-      -  "80"
+      -  "6080:80"
     tty: true
