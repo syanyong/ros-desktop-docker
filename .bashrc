@@ -97,6 +97,6 @@ fi
 #if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 #    . /etc/bash_completion
 #fi
-source /opt/ros/melodic/setup.bash
+source /opt/ros/galactic/setup.bash
 # source ~/catkin_ws/devel/setup.bash
-source ~/ros_ws/devel/setup.bash
+# source ~/ros_ws/devel/setup.bash
