@@ -4,4 +4,7 @@ services:
     image: syanyong/ros-desktop:noetic
     ports:
       -  "6080:80"
+      -  "2222:22"
     tty: true
+
+    
