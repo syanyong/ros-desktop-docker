@@ -2,9 +2,13 @@ version: '3'
 services:
   ros2_ws1:
     image: syanyong/ros-desktop:noetic
+    volumes: 
+      - ./ros_ws:/home/ubuntu/ros_ws
     ports:
       -  "6080:80"
       -  "2222:22"
+    # devices:
+    #   - "/dev/ttyUSB0:/dev/ttyUSB0"
     tty: true
 
     
