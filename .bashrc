@@ -97,6 +97,12 @@ fi
 #if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 #    . /etc/bash_completion
 #fi
+
+alias setclip="DISPLAY=:1 xclip -selection c"
+alias getclip="DISPLAY=:1 xclip -selection c -o"
+
+
 source /opt/ros/noetic/setup.bash
 # source ~/catkin_ws/devel/setup.bash
 source ~/ros_ws/devel/setup.bash
+export TURTLEBOT3_MODEL=burger
