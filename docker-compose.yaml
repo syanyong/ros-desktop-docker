@@ -1,9 +1,11 @@
-version: '3'
+version: '2'
 services:
   ros2_ws1:
     image: syanyong/ros-desktop:noetic
+    # cpus: 1.0
     volumes: 
-      - ./ros_ws:/home/ubuntu/ros_ws
+      - ./ros_ws:/root/ros_ws
+      - ./.bashrc:/root/.bashrc
     ports:
       -  "6080:80"
       -  "2222:22"
